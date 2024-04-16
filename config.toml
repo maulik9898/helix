@@ -30,6 +30,7 @@ G = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 C-s = ":write"
 tab = ":buffer-next"
 S-tab = ":buffer-previous"
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [editor.file-picker]
 hidden = true
