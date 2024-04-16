@@ -1,0 +1,41 @@
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+auto-format = false
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+auto-format = false
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+auto-format = false
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+auto-format = false
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+auto-format = false
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "tailwindcss-ls"]
+
+[language-server.tailwindcss-ls]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
+
+[[language]]
+name = "jsonc"
+scope = "source.json"
+injection-regex = "jsonc"
+file-types = ["json"]
+grammar = "json"
+language-servers = [ "vscode-json-language-server" ]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }

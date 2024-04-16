@@ -1,0 +1,38 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "absolute"
+bufferline = "always"
+color-modes = true
+mouse = true
+popup-border = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "read-only-indicator", "file-modification-indicator"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+
+
+[keys.normal]
+G = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+C-s = ":write"
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+render = true
